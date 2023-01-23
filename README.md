@@ -49,9 +49,10 @@ It also computes the analytical equilibrium point for those parameters.
 ### Multiple populations 
 Consider $M$ populations composed of $N$ Kuramoto oscillatros each with an all-to-all topology, with a fraction of self-connectivity $p$ and $1-p$ for the mean-field. One can describe the Ott-Antonsen equations as:
 
-$$ \dot Z_{\sigma} = -\Delta Z_{\sigma} + \frac{K}{2} (\overline Z e^{-i\alpha} - Z_{\sigma}^2 \overline Z^{*}e^{i\alpha})$$
+$$ \dot Z_{\sigma} = -\Delta Z_{\sigma} + \frac{K}{2} (\overline Z e^{-i\alpha} - Z_{\sigma}^2 \overline Z^{*}e^{i\alpha}),$$
 where 
-$$ \overline Z = \frac{1}{M}\sum_{\kappa = 1}^M Z_{\sigma}$$
+$$ \overline Z = \frac{1}{M}\sum_{\kappa = 1}^M Z_{\sigma }$$
+
  is the global Kuramoto order parameter for all the M populations
 
 + `kuramoto_Mpops_cartesian.jl`: Simulation of a system of M all-to-all coupled populations of N Kuramoto oscillators. System reduced from M·N equations to 2M equations, using the order parameter of each population in cartesian form.
