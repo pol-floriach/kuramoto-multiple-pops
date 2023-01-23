@@ -56,3 +56,5 @@ See photo gallery for images of Poincaré sections and bifurcation diagrams.
 [LaTeXStrings.jl](https://github.com/stevengj/LaTeXStrings.jl)
 
 ## Photo gallery
+
+[image](https:github.com/pol-floriach/kuramoto-multiple-pops/gallery/1-pop/kuramoto_order_parameter.png?raw=true)
