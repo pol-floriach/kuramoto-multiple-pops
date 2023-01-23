@@ -61,7 +61,7 @@ where
 
 $$ \overline Z = \frac{1}{M}\sum_{\kappa = 1}^M Z_{\sigma }$$
 
- is the global Kuramoto order parameter for all the M populations
+ is the global Kuramoto order parameter for all the M populations.
 
 + `kuramoto_Mpops_cartesian.jl`: Simulation of a system of M all-to-all coupled populations of N Kuramoto oscillators, using the order parameter of each population in cartesian form.
 + `kuramoto_Mpops_polar.jl`: Essentially the same code as + `kuramoto_Mpops_cartesian.jl` but with the equations in polar form.
