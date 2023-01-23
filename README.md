@@ -16,7 +16,7 @@ include("path/to/dir/filename.jl")
 on an active Julia REPL.
 ## Contents
 ### One population
-+ `kuramoto_1pop`: Simulation example of a Kuramoto-Sakaguchi system of oscillators, using both the microscopical equations and a mean field model (using the Ott-Antonsen ansatz).
++ `kuramoto_1pop`: Simulation example of a Kuramoto-Sakaguchi system of oscillators, using both the microscopical equations and a mean field model, defining an order parameter for the system (and using the Ott-Antonsen ansatz).
 
 + `kuramoto_1pop_sim`: Integrates the microscopical system and outputs an animation of the N oscillators phase on the unit circle.
 
@@ -28,11 +28,17 @@ on an active Julia REPL.
 + `kuramoto_2pops_symm.jl`: Simulates the system for a necessary amount of time for it to reach equilibrium. It does so with a given set of parameters such that both populations are symmetrical (same order parameter for both) and on an antiphase state (same order parameter modulus, but with a 180º shift).
 It also computes the analytical equilibrium point for those parameters. 
 
-+ `kuramoto_2pops_symm_phase_diagr`: Produces a contour plot 
 ### Multiple populations 
++ `kuramoto_Mpops_cartesian.jl`: Simulation of a system of M all-to-all coupled populations of N Kuramoto-Sakaguchi oscillators. System reduced from M·N equations to 2M equations, using the order parameter of each population in cartesian form.
++ `kuramoto_Mpops_polar.jl`: Essentially the same code as + `kuramoto_Mpops_cartesian.jl` but with the equations in polar form.
 
++ `kuramoto_Mpops_poincare_section.jl`: Produces a plot of a Poincaré section of the M population system, for a desired range of coupling constant K.
+
++ `kuramoto_Mpops_bifurcation_diagram.jl`: Produces a bifurcation diagram of the M population system. 
+
+See photo gallery for images of Poincaré sections and bifurcation diagrams.
 ### Ring of oscillators
-
++ `kuramoto_ring.jl`: Simulation of a ring of N Kuramoto-Sakaguchi oscillators, coupled all to all. 
 
 ## Dependencies 
 [Julia](https://github.com/JuliaLang/julia)
